@@ -33,6 +33,12 @@ The demos from this series were based on the application and code in this reposi
 * Grafana Agent service for receiving traces and producing metrics and logs based on these traces.
 * A Node Exporter service to retrieve resource metrics from the local host.
 
+## Run local otel grafana stack
+
+```
+docker compose -f .\docker-compose-otel.yml up -d
+```
+
 ## Running the Demonstration Environment
 
 Docker Compose will download the required Docker images, before starting the demonstration environment.
