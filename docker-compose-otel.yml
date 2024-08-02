@@ -11,7 +11,7 @@ services:
       - "12348:12348"
       - "6832:6832"
       - "55679:55679"
-      - "4320:4317"
+      - "4317:4317"
     volumes:
       - ./otel/otel.yml:/etc/otel-collector-config.yml
     command: ["--config=/etc/otel-collector-config.yml"]
@@ -45,7 +45,7 @@ services:
     image: grafana/tempo:2.2.0
     ports:
       - "3200:3200"
-      - "4317:4317"
+      - "4320:4317"
       - "55680:55680"
       - "55681:55681"
       - "14250:14250"
